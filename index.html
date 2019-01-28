@@ -31,13 +31,27 @@
       /><img src="res/img/7.jpg" class="slideshow-images" />
     </div>
     <script>
-      "Madalina";
-      console.log("Madalina");
-      var Madalina = "Madalina";
-      console.log(Madalina);
-      document.getElementsByClassName("slideshow-images");
-      var imgs = document.getElementsByClassName("slideshow-images");
-      imgs[0].style.right = "20px";
+
+      var rightPosition = 0;
+
+      function moveImages () {
+        rightPosition += 100;
+        var imgs = document.getElementsByClassName("slideshow-images");
+        for (var i = 0; i < imgs.length; i++) {
+          imgs[i].style.right = rightPosition + "px";
+        }
+        
+
+        if(rightPosition > 1500) {
+          rightPosition = 0;
+        }
+      }
+
+      setInterval(moveImages, 1000);
+
+
+
+
     </script>
   </body>
 </html>
