@@ -33,13 +33,15 @@ a {
   font-family: "Arvo", serif;
 }
 .slideshow-images {
-  height: 400px;
+  height:inherit;
   position: relative;
   right: 0px;
 }
 .slideshow {
-  padding-top: 50px;
-  height: 400px;
   overflow: hidden;
   white-space: nowrap;
+}
+
+#single-page-element {
+  height: 500px;
 }
