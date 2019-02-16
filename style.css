@@ -42,15 +42,6 @@ a {
   padding-right:50px;
   font-family: "Arvo", serif;
 }
-.slideshow-images {
-  height:inherit;
-  position: relative;
-  right: 0px;
-}
-.slideshow {
-  overflow: hidden;
-  white-space: nowrap;
-}
 .form-element {
   font-family: "Arvo", serif;
   width:100%;
@@ -73,4 +64,32 @@ a {
 .about-me {
   font-family: "Arvo", serif;
   font-size: 20px;
+}
+
+@keyframes slider-animation1 {
+  from {right: 0px;}
+  to {right: 500px;}
+}
+@keyframes slider-animation2 {
+  from {right: 500px;}
+  to {right: 1000px;}
+}
+@keyframes slider-animation3 {
+  from {right: 1000px;}
+  to {right: 1500px;}
+}
+@keyframes slider-animation4 {
+  from {right: 1500px;}
+  to {right: 2000px;}
+}
+.slideshow {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.slideshow-images {
+  height:inherit;
+  position: relative;
+  right: 0px;
+  animation: slider-animation1 3s ease 0s 1 normal forwards;
 }

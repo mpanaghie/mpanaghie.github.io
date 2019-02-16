@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="common.js"></script>
   </head>
-  <body onload="resizeContent();">
+  <body onload="resizeContent();" style="opacity: 0">
     <h1 id="title" class="title-center">Madalina<br />Panaghie</h1>
     <ul id="menu">
       <li><a href="index.html"><b>Home</b></a></li>
@@ -34,25 +34,6 @@
         class="slideshow-images"
       /><img src="res/img/7.jpg" class="slideshow-images" />
     </div>
-    <script>
-
-      var rightPosition = 0;
-
-      function moveImages () {
-        rightPosition += 100;
-        var imgs = document.getElementsByClassName("slideshow-images");
-        for (var i = 0; i < imgs.length; i++) {
-          imgs[i].style.right = rightPosition + "px";
-        }
-        
-
-        if(rightPosition > 1500) {
-          rightPosition = 0;
-        }
-      }
-
-      //setInterval(moveImages, 1000);
-
-    </script>
+    <script type="text/javascript" src="slider.js"></script>
   </body>
 </html>
