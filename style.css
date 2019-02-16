@@ -7,8 +7,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
+  text-align: center;
+}
+.page-size {
+  max-width:500px;
+  margin: auto;
+  padding: 10px;
 }
 #title {
+  font-family: "Major Mono Display", monospace;
+}
+.content-font {
   font-family: "Major Mono Display", monospace;
 }
 .title-center {
@@ -29,7 +38,8 @@ a {
   color: black;
   text-decoration: none;
   text-align: center;
-  padding: 50px;
+  padding-left:50px;
+  padding-right:50px;
   font-family: "Arvo", serif;
 }
 .slideshow-images {
@@ -41,7 +51,26 @@ a {
   overflow: hidden;
   white-space: nowrap;
 }
+.form-element {
+  font-family: "Arvo", serif;
+  width:100%;
+  margin-top: 10px;
+  height:40px;
+  border:0;
+}
+.form-element-input {  
+  background-color: transparent;
+  color: black;  
+}
+.form-element-input::placeholder {
+  color: grey;  
+}
+.form-button {
+  background-color: black;
+  color: white;
+}
 
-#single-page-element {
-  height: 500px;
+.about-me {
+  font-family: "Arvo", serif;
+  font-size: 20px;
 }

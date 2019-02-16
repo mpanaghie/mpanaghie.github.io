@@ -12,16 +12,17 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="common.js"></script>
   </head>
-  <body onload="resizeSlideshow();">
+  <body onload="resizeContent();">
     <h1 id="title" class="title-center">Madalina<br />Panaghie</h1>
     <ul id="menu">
-      <li><a href="#tes123">Home</a></li>
-      <li><a href="index2.html">Bio</a></li>
-      <li><a href="Portfolio.asp">Portfolio</a></li>
-      <li><a href="Contact.asp">Contact</a></li>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="bio.html">Bio</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div class="slideshow" id="single-page-element">
+    <div class="slideshow single-page-element">
       <img src="res/img/1.jpg" class="slideshow-images" /><img
         src="res/img/2.jpg"
         class="slideshow-images"
@@ -51,13 +52,6 @@
       }
 
       //setInterval(moveImages, 1000);
-      function resizeSlideshow() {        
-        var slideshow = document.getElementById ("single-page-element");
-        var positionY = slideshow.getBoundingClientRect ().y;
-        var height = window.innerHeight;
-
-        slideshow.style.height = (height - positionY) + "px";
-      }
 
     </script>
   </body>
