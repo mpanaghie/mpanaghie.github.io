@@ -95,15 +95,15 @@ a {
 }
 .portfolio-item-wrapper {
   padding: 20px;
-  height: 300px;
-  width: 250px;
+  height: 350px;
+  width: 300px;
 }
 .portfolio-item-title {
   text-align: center;
+  margin: 0px;
 }
 .portfolio-item {
   width: 100%;
-  margin: auto;
   border: 2px solid;
 }
 .portfolio-container {

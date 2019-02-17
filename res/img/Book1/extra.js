@@ -1,1 +1,1 @@
-var book1 = ["Snake Heart", "Panther", "Portrait", "Saint Deformity", "Titled Head", "Half", "Sliced", "Wolf", "Back", "Soaked", "Staring at the sun", "Jaws", "Pearl", "Dog", "Snake Ring", "Knife", "Hand", "Wolves", "Glass", "Goat"];
+var book1 = ["Snake Heart", "Panther", "Portrait", "Saint Deformity", "Titled Head", "Half", "Sliced", "Wolf", "Back", "Soaked", "Staring At The Sun", "Jaws", "Pearl", "Dog", "Snake Ring", "Knife", "Hand", "Wolves", "Glass", "Goat"];
