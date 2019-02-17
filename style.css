@@ -10,7 +10,7 @@ body {
   text-align: center;
 }
 .page-size {
-  max-width:500px;
+  max-width:1100px;
   margin: auto;
   padding: 10px;
 }
@@ -92,4 +92,22 @@ a {
   position: relative;
   right: 0px;
   animation: slider-animation1 3s ease 0s 1 normal forwards;
+}
+.portfolio-item-wrapper {
+  padding: 20px;
+  height: 300px;
+  width: 250px;
+}
+.portfolio-item-title {
+  text-align: center;
+}
+.portfolio-item {
+  width: 100%;
+  margin: auto;
+  border: 2px solid;
+}
+.portfolio-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
 }
