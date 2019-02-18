@@ -95,15 +95,16 @@ a {
 }
 .portfolio-item-wrapper {
   padding: 5px;
-  height: 320px;
-  width: 320px;
 }
 .portfolio-item {
-  width: 100%;
+  width: 320px;
+  border: 2px solid;
+}
+.portfolio-item-big {
+  width: 2048;
   border: 2px solid;
 }
 .portfolio-container {
   display: flex;
   flex-wrap:wrap;
-  justify-content: center;
 }
