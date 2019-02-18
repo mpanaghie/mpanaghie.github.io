@@ -94,13 +94,9 @@ a {
   animation: slider-animation1 3s ease 0s 1 normal forwards;
 }
 .portfolio-item-wrapper {
-  padding: 20px;
-  height: 350px;
-  width: 300px;
-}
-.portfolio-item-title {
-  text-align: center;
-  margin: 0px;
+  padding: 5px;
+  height: 320px;
+  width: 320px;
 }
 .portfolio-item {
   width: 100%;
