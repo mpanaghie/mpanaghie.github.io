@@ -1,6 +1,6 @@
 var portfolioContainer = document.getElementsByClassName("portfolio-container")[0];
 
-for (var i=1;i<=25;i++) {
+for (var i=1;i<=40;i++) {
     var div = document.createElement("DIV");
     div.setAttribute("class", "portfolio-item-wrapper");
 
