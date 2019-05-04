@@ -23,3 +23,18 @@
   right: 2vmin;
   bottom: 4vmin;
 }
+
+.artwork-title {
+    font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 2vmin;
+    top: 2vmin;
+}
+
+.full-image {
+    height: 100vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
