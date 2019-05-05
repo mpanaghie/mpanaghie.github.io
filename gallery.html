@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="gallery.css" />
     <link rel="stylesheet" type="text/css" href="social-media-buttons.css" />
+    <link rel="stylesheet" type="text/css" href="carousel.css" />
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <!-- website styling -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -39,30 +40,97 @@
         </button>
     </div>
     <div class="social-buttons">
-        <a class="btn btn-facebook btn-round" title="Like my Facebook Page" data-toggle="tooltip" data-placement="top" href="https://www.facebook.com/Madalina-Panaghie-418589464925433">
+        <a class="btn btn-facebook btn-round" title="Like my Facebook Page" data-toggle="tooltip" data-placement="top"
+            href="https://www.facebook.com/Madalina-Panaghie-418589464925433">
             <i class="fab fa-facebook-f"></i>
         </a>
         <div class="menu-separator"></div>
-        <a class="btn btn-instagram btn-round" title="Follow me on Instagram" data-toggle="tooltip" data-placement="top" href="https://www.instagram.com/madalina_panaghie">
+        <a class="btn btn-instagram btn-round" title="Follow me on Instagram" data-toggle="tooltip" data-placement="top"
+            href="https://www.instagram.com/madalina_panaghie">
             <i class="fab fa-instagram"></i>
         </a>
         <div class="menu-separator"></div>
-        <a class="btn btn-patreon btn-round" title="Support me on Patreon" data-toggle="tooltip" data-placement="top" href="#">
+        <a class="btn btn-patreon btn-round" title="Support me on Patreon" data-toggle="tooltip" data-placement="top"
+            href="#">
             <i class="fab fa-patreon"></i>
         </a>
     </div>
-    <div>
+    <div class="full-image-hide">
         <h1 class="artwork-title">
             Artwork title
         </h1>
     </div>
-    <div>
-        <img src="res/img/001.jpg" class="full-image">
+    <div class="full-image-hide">
+        <!--
+            <img src="res/img/001.jpg" class="full-image absolute-center">
+        -->
+        <div id="myCarousel" class="carousel slide vertical">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="http://placehold.it/600x400&amp;text=First+Slide">
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/600x400&amp;text=Second+Slide">
+                </div>
+                <div class="item">
+                    <img src="http://placehold.it/600x400&amp;text=Third+Slide">
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="gallery">
+            <div class="col-lg-4 col-sm-6 col-12">
+                <h1>
+                    Madalina Panaghie
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis itaque aliquam assumenda
+                    debitis,
+                    molestiae
+                    soluta. Unde ipsa quia aliquid eius natus inventore adipisci facere eligendi reiciendis? Repellat,
+                    dicta
+                    mollitia! Pariatur!
+                </p>
+            </div>
+            <!--
+            <div class="col-lg-2 col-sm-4 col-6">
+                <img src="res/img/preview/001.jpg" class="grid-image-size">
+            </div>
+            -->
+        </div>
     </div>
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
-        })
+        });
+        $('.carousel').carousel({
+            interval: 3000
+        });
+        function createImage(imgSrc) {
+            var gallery = document.getElementById ("gallery");
+            var div = document.createElement ("DIV");
+            div.setAttribute("class", "col-lg-2 col-sm-4 col-6");
+            var img = document.createElement("IMG");
+            img.setAttribute("src", imgSrc);
+            img.setAttribute("class", "grid-image-size");
+            div.appendChild (img);
+            gallery.appendChild(div);
+        }
+
+        function getImgSrc(i) {
+            var imageSrc = "res/img/preview/Page_" + i + " copy.jpg";
+            return imageSrc;
+        }
+
+        for (var i = 1; i <= 72; i++) {
+            var imgSrc = getImgSrc(i);
+            createImage(imgSrc);
+        } 
     </script>
 </body>
 
